@@ -16,7 +16,9 @@
         android:id="@+id/input1"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp" />
+        android:layout_marginTop="46dp"
+        android:height="100.0dip"
+        android:hint="Enter 1st no." />
 
     <EditText
         android:layout_width="wrap_content"
@@ -26,7 +28,9 @@
         android:id="@+id/input2"
         android:layout_below="@+id/input1"
         android:layout_alignLeft="@+id/input1"
-        android:layout_alignStart="@+id/input1" />
+        android:layout_alignStart="@+id/input1"
+        android:height="100.0dip"
+        android:hint="Enter 2nd no." />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -37,17 +41,21 @@
         android:layout_below="@+id/input2"
         android:layout_alignLeft="@+id/input2"
         android:layout_alignStart="@+id/input2"
-        android:layout_marginTop="95dp" />
+        android:layout_marginTop="95dp"
+        android:hint="Multiply"
+        android:onClick="mult" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="/"
-        android:id="@+id/div"
+        android:text="C"
+        android:id="@+id/clear"
         android:layout_alignTop="@+id/mult"
         android:layout_alignRight="@+id/input2"
-        android:layout_alignEnd="@+id/input2" />
+        android:layout_alignEnd="@+id/input2"
+        android:hint="Clear"
+        android:onClick="clear" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -55,6 +63,9 @@
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/result"
-        android:layout_above="@+id/div"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/input2"
+        android:layout_alignLeft="@+id/input2"
+        android:layout_alignStart="@+id/input2"
+        android:hint="Result"
+        android:height="100dip" />
 </RelativeLayout>
